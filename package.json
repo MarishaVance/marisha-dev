@@ -1,0 +1,35 @@
+{
+  "name": "marisha.dev",
+  "version": "1.0.0",
+  "description": "Marisha's personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "sass": "sass --style=compressed src/styles/main.scss src/_includes/css/styles.css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "sass --style=compressed --watch src/styles/main.scss src/_includes/css/styles.css",    
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "pnpm run sass && eleventy"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Marisha",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "npm-run-all2": "^9.0.2",
+    "sass": "^1.101.0"
+  }
+}

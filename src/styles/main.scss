@@ -1,0 +1,12 @@
+@use 'reset';
+// @use 'variables';
+// @use 'base';
+// @use 'layout';
+// @use 'typography';
+
+// dot grid paper
+body {
+  background-color: #f5f3f0;
+  background-image: radial-gradient(circle, #c4bdb5 1px, transparent 1px);
+  background-size: 24px 24px;
+}
