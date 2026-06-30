@@ -8,7 +8,7 @@
     "debug": "DEBUG=Eleventy* eleventy",
     "sass": "sass --style=compressed src/styles/main.scss src/_includes/css/styles.css",
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "sass --style=compressed --watch src/styles/main.scss src/_includes/css/styles.css",    
+    "watch:sass": "sass --style=compressed --watch src/styles/main.scss src/_includes/css/styles.css",
     "start": "npm-run-all sass --parallel watch:*",
     "build": "pnpm run sass && eleventy"
   },
@@ -17,13 +17,7 @@
   ],
   "author": "Marisha",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.9.0",
-      "onFail": "download"
-    }
-  },
+  "packageManager": "pnpm@9.15.0",
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
