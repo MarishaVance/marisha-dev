@@ -19,11 +19,11 @@ $font-cursive: "Pacifico", cursive;
 }
 
 .header__home-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  text-decoration: none;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 4px;
+  // text-decoration: none;
 }
 
 .header__title {
@@ -31,28 +31,13 @@ $font-cursive: "Pacifico", cursive;
 }
 
 .repeated-header {
-  padding-top: 15px;
+  padding-top: 25px;
   font-family: $font-text, sans-serif;
-  // text-transform: uppercase;
   letter-spacing: 5px;
   position: relative;
   display: inline-block;
   font-size: 3em;
   color: #780b76;
-  // &:before {
-  //   content: "marisha.dev";
-  //   position: absolute;
-  //   font-family: $font-cursive;
-  //   text-transform: none;
-  //   z-index: -1;
-  //   opacity: 0.5;
-  //   color: #d37427;
-  //   letter-spacing: 15px;
-  //   font-size: 50%;
-  //   left: 50%;
-  //   white-space: nowrap;
-  //   transform: translate(-49%, 10%);
-  // }
   &:before {
     content: "hello";
     position: absolute;
@@ -65,7 +50,7 @@ $font-cursive: "Pacifico", cursive;
     font-size: 50%;
     left: 50%;
     white-space: nowrap;
-    transform: translate(-230%, -60%) rotate(-8deg);
+    transform: translate(-230%, -65%) rotate(-8deg);
   }
 }
 
@@ -102,9 +87,9 @@ $font-cursive: "Pacifico", cursive;
     transform: rotate(-8deg);
   }
   &--top-right {
-    width: 110px;
+    width: 140px;
     top: -12px;
-    right: 50px;
+    right: 45px;
     transform: rotate(6deg);
   }
   &--overlap-a {
