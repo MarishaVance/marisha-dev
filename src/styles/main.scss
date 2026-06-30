@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'header';
+@use "reset";
+@use "header";
 // @use 'variables';
 // @use 'base';
 // @use 'layout';
@@ -10,4 +10,9 @@ body {
   background-color: #f5f3f0;
   background-image: radial-gradient(circle, #c4bdb5 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
 }
