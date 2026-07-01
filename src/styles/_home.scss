@@ -1,8 +1,67 @@
+$font-text: "Neucha", sans-serif;
+$font-gentle: "Fuzzy Bubbles", sans-serif;
+$font-cursive: "Pacifico", cursive;
+$font-handwriting: "Annie Use Your Telescope", cursive;
+$font-typewriter: "Special Elite", system-ui;
+
 .home-page {
   padding: 30px;
   margin: 30px;
   display: block;
   text-align: center;
   color: #780b76;
-  font-family: "Neucha", sans-serif;
+  font-family: $font-text;
+}
+
+.home-grid {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  &__item {
+    height: 220px;
+    padding: 22%;
+    position: relative;
+    background-color: rgba(237, 203, 188, 0.66);
+    font-family: $font-typewriter;
+    font-size: 2.2em;
+
+    &:hover {
+      outline: 4px solid rgba(237, 203, 188, 0.9);
+      outline-offset: 0.2rem;
+      background-color: rgba(237, 203, 188, 0.75);
+    }
+  }
+
+  &__navigation-link {
+    color: #780b76;
+    text-decoration: none;
+  }
+
+  &__website {
+    transform: rotate(-2deg);
+    border-radius: 40% 60% 50% 60% / 60% 50% 60% 50%;
+
+    &:hover {
+      transform: scale(1.05) rotate(-10deg);
+
+      @media screen and (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
+    }
+  }
+
+  &__about {
+    transform: rotate(3deg);
+    border-radius: 30% 40% 30% 70% / 60% 30% 70% 40%;
+
+    &:hover {
+      transform: scale(1.05) rotate(5deg);
+
+      @media screen and (prefers-reduced-motion: reduce) {
+        transform: none;
+      }
+    }
+  }
 }

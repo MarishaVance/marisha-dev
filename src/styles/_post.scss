@@ -1,0 +1,31 @@
+$font-text: "Neucha", sans-serif;
+$font-handwriting: "Annie Use Your Telescope", cursive;
+
+.post {
+  padding: 30px;
+  max-width: 680px;
+  margin: 50px auto;
+  font-family: $font-handwriting;
+  font-size: 1.5em;
+  // border: 3px solid #780b76;
+
+  h1,
+  h2 {
+    font-family: $font-text;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    padding: 10px 0px;
+  }
+
+  a:link {
+    color: #780b76;
+  }
+
+  li {
+    list-style: inside;
+    margin: 10px 5px;
+  }
+}
